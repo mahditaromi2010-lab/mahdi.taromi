@@ -1,2 +1,4 @@
 # mahdi.taromi
-Personal site of Mahdi Taromi, web developer and netork security (GitHub Pages)
+Resume + cover-letter site of Mahdi Taromi. EN at `/`, FA at `/fa/`. Static, GitHub Pages. Same template as fatemeh.taromi (`sitegen/build.py`).
+
+Later: add `CNAME` with `mahdi.taromi.net`.

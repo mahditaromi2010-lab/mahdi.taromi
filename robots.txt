@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mahditaromi2010-lab.github.io/mahdi.taromi/sitemap.xml
