@@ -38,9 +38,11 @@ aside h2{margin:0 0 10px;font-size:13px;letter-spacing:.08em;text-transform:uppe
 aside ul{list-style:none;margin:0 0 18px;padding:0}
 aside li{display:flex;gap:10px;align-items:center;padding:2px 0;border-bottom:1px solid var(--line)}
 aside li:last-child{border:0}
-aside li a{color:var(--ink);text-decoration:none;min-height:44px;padding:0;display:inline-flex;align-items:center;word-break:break-all}
+aside li a{color:var(--ink);text-decoration:none;min-height:44px;padding:0;display:inline-flex;align-items:center;overflow-wrap:anywhere}
 aside li a:hover{color:var(--accent)}
 aside .k{color:var(--muted);min-width:84px;font-size:14px;padding-top:2px}
+aside li:has(.k){flex-direction:column;align-items:flex-start;gap:0;padding:8px 0 0}
+aside li:has(.k) .k{padding:0}
 .lvl{display:flex;justify-content:space-between;gap:8px}
 .lvl b{font-weight:500;color:var(--muted);font-size:14px}
 section.block{padding:8px 0 28px}
@@ -82,7 +84,7 @@ section.block h2::after{content:"";flex:1;height:1px;background:var(--line)}
 @media (min-width:860px){
   .layout{grid-template-columns:300px 1fr;gap:40px}
   aside{position:sticky;top:84px;align-self:start}
-  .job{grid-template-columns:150px 1fr}
+  .job{grid-template-columns:170px 1fr}
   .job .when{grid-row:1/span 3}
 }
 @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
