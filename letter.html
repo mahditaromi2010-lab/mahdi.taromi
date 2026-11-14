@@ -24,24 +24,21 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="top"><div class="wrap">
-  <a class="brand" href="./"><img src="logo.webp" alt="" width="32" height="32">Mahdi Taromi</a>
+  <a class="brand" href="./"><img src="logo.webp" alt="" width="32" height="32"><span>Mahdi Taromi</span></a>
   <nav aria-label="Sections">
     <a href="./">Resume</a>
     <a href="letter.html" aria-current="page">Cover letter</a>
     <a href="./#contact">Contact</a>
     <a class="lang" href="fa/letter.html" lang="fa" hreflang="fa">فارسی</a>
+    <a class="cv" href="Mahdi_Taromi_CV.pdf" download>Download CV (PDF)</a>
   </nav>
 </div></header>
 
-<main id="main" class="wrap" style="padding:36px 0 56px">
-  <p class="eyebrow" style="text-align:center">Cover letter</p>
-  <h1 style="text-align:center;font-size:clamp(26px,4vw,38px)">Cover letter</h1>
-  <p class="tagline" style="text-align:center;margin:0 auto 26px">A general letter for junior web developer, security and IT roles, internships and study applications. Swap in the organisation and role before sending.</p>
+<main id="main" class="wrap">
+  <div class="lt-head"><p class="eyebrow">Cover letter</p><h1>Cover letter</h1><p class="tagline">A general letter for junior web developer, security and IT roles, internships and study applications. Swap in the organisation and role before sending.</p></div>
   <article class="letter" id="letter">
-    <div class="meta"><span>Mahdi Taromi</span><span>Shiraz, Iran · <a href="mailto:mahditaromi2010@gmail.com">mahditaromi2010@gmail.com</a></span><span id="today"></span></div>
-    <p>Dear Hiring Manager,</p>
-    <p>I am applying for the [Role] at [Organisation]. I am a web developer and network security learner from Shiraz, Iran, and the founder of SentinelWeb, a security assessment service that I designed, built and run on my own server.</p><p>What I bring is the full loop. I can take a product from an idea to a running service: Flask or Node.js backend, PostgreSQL, a responsive right-to-left front end in Next.js and Tailwind, Docker and Nginx deployment, then the security audit at the end with Nmap, Nikto, ZAP and an OWASP Top 10 review. Three products I built this way are live today: SentinelWeb, novingity (a building-services platform with calculators, a course store and an AutoCAD plugin) and Paradigmshift (a learning platform with private video).</p><p>I am currently completing the CompTIA Network+ course and I train in Kyokushin karate, where I have won several medals. Both are daily-practice disciplines, and that is how I approach code: small commits, tests, and a security pass before anything ships.</p><p>I am available for remote work and online interviews, and my full profile with live project links is at mahditaromi2010-lab.github.io/mahdi.taromi. I would welcome the chance to show you one of the systems in a short call.</p>
-    <p>Thank you for your time and consideration.</p>
+    <div class="meta2"><span>Mahdi Taromi</span><span>Shiraz, Iran · <a href="mailto:mahditaromi2010@gmail.com">mahditaromi2010@gmail.com</a></span><span id="today"></span></div>
+    <p>Dear Hiring Manager,</p><p>I am applying for the [Role] at [Organisation]. I am a web developer and network security learner from Shiraz, Iran, and the founder of SentinelWeb, a security assessment service that I designed, built and run on my own server.</p><p>What I bring is the full loop. I can take a product from an idea to a running service: Flask or Node.js backend, PostgreSQL, a responsive right-to-left front end in Next.js and Tailwind, Docker and Nginx deployment, then the security audit at the end with Nmap, Nikto, ZAP and an OWASP Top 10 review. Three products I built this way are live today: SentinelWeb, novingity (a building-services platform with calculators, a course store and an AutoCAD plugin) and Paradigmshift (a learning platform with private video).</p><p>I am currently completing the CompTIA Network+ course and I train in Kyokushin karate, where I have won several medals. Both are daily-practice disciplines, and that is how I approach code: small commits, tests, and a security pass before anything ships.</p><p>I am available for remote work and online interviews, and my full profile with live project links is at mahditaromi2010-lab.github.io/mahdi.taromi. I would welcome the chance to show you one of the systems in a short call.</p><p>Thank you for your time and consideration.</p>
     <div class="sig"><b>Mahdi Taromi</b><span style="color:var(--muted)">Web developer · Network security</span></div>
   </article>
   <div class="tools">
@@ -52,16 +49,5 @@
   <p class="note">Replace the company name and role before sending.</p>
   <div class="live" id="live" aria-live="polite"></div>
 </main>
-<script>
-(function(){
-  var d=new Date();try{document.getElementById('today').textContent=new Intl.DateTimeFormat('en-GB',{dateStyle:'long'}).format(d)}catch(e){}
-  var live=document.getElementById('live');function say(t){live.textContent=t;live.classList.add('on');setTimeout(function(){live.classList.remove('on')},1800)}
-  document.getElementById('copy').addEventListener('click',function(){
-    var t=document.getElementById('letter').innerText;
-    if(navigator.clipboard){navigator.clipboard.writeText(t).then(function(){say('Letter copied')},function(){say('Copy failed, select the text manually')})}else{say('Copy failed, select the text manually')}
-  });
-  document.getElementById('print').addEventListener('click',function(){window.print()});
-})();
-</script>
 <footer class="foot"><div class="wrap"><p>Mahdi Taromi · <a href="https://mahditaromi2010-lab.github.io/taromi-hub/">Taromi family sites</a></p></div></footer>
 </body></html>
